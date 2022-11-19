@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hoy"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:alpha="0.001"
+        />
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       >
+
+       <ImageView
+           android:layout_marginTop="5dp"
+           android:layout_width="200dp"
+           android:layout_height="200dp"
+           android:layout_gravity="center"
+           android:src="@drawable/imageonline_co_transparentimage"
+           />
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_marginLeft="30dp"
+           android:layout_marginRight="30dp"
+           android:layout_marginTop="5dp">
+
+           <ImageView
+               android:layout_width="40dp"
+               android:layout_height="40dp"
+               android:src="@drawable/correo_electronico"
+               android:layout_marginTop="10dp"
+               android:layout_marginRight="10dp"/>
+
+           <com.google.android.material.textfield.TextInputLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textColorHint="@color/morador"
+               >
+
+               <com.google.android.material.textfield.TextInputEditText
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:hint="Correo electrónico"
+
+                   android:background="@color/transparente"
+                   android:inputType="textEmailAddress"
+                   />
+
+           </com.google.android.material.textfield.TextInputLayout>
+
+       </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="5dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/password"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"/>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/morador">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Contraseña"
+
+                android:background="@color/transparente"
+                android:inputType="text"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </LinearLayout>
+
+
+      <Button
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="INICIAR SESION"
+          android:background="@drawable/rounded_button"
+          android:layout_marginTop="20dp"
+          android:layout_marginRight="20dp"
+          android:layout_marginLeft="20dp"
+          />
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:gravity="center"
+         android:layout_marginTop="100dp"
+         android:layout_marginLeft="20dp"
+         android:layout_marginRight="20dp"
+         >
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="¿no tienes cuenta?"
+             android:textColor="@color/white"
+             android:layout_marginRight="15dp"
+
+             />
+
+         <TextView
+             android:id="@+id/TextViewRegister"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="REGISTRATE"
+             android:textColor="@color/white"
+             android:textStyle="bold"
+             android:textSize="17sp"
+             />
+
+
+
+     </LinearLayout>
+
+   </LinearLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
